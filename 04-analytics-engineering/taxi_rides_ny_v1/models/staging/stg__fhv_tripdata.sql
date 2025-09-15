@@ -18,10 +18,10 @@ select
     sr_flag,
     affiliated_base_number
 from tripdata
-where extract(YEAR FROM cast(dropoff_datetime as timestamp)) = 2019
+where extract(YEAR FROM cast(pickup_datetime as timestamp)) = 2019
 
-{% if var('is_test_run', default=true) %}
+-- {% if var('is_test_run', default=true) %}
 
-  limit 100
+--   limit 100
 
-{% endif %}
+-- {% endif %}
